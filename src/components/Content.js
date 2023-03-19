@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
-export default function Content() {
-    const [currentPage, setCurrentPage] = useState('AboutMe');
+function Content(props) {
+    // const [currentPage, setCurrentPage] = useState('AboutMe');
 
     let content = () => {
-        if (currentPage === 'AboutMe') {
+        if (props.currentPage === 'AboutMe') {
             return <AboutMe />;
         }
-        if (currentPage === 'Portfolio') {
+        if (props.currentPage === 'Portfolio') {
             return <Portfolio />;
         }
-        if (currentPage === 'Contact') {
+        if (props.currentPage === 'Contact') {
             return <Contact />;
         }
         return <Resume />;
@@ -26,3 +26,5 @@ export default function Content() {
         </div>
     )
 }
+
+export default Content;

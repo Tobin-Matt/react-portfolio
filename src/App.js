@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
-import Navbar from './components/Navbar';
 import Content from './components/Content';
 import Footer from './components/Footer';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('AboutMe');
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  }
+
   return (
-    <div className="App">
-      <Header>
-        <Navbar />
-      </Header>
-      <Content />
+    <div>
+      <Header handlePageChange={handlePageChange} />
+      <Content currentPage={currentPage} />
       <Footer />
     </div>
   );
