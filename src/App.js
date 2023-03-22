@@ -11,7 +11,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='bg-[#0a192f]'>
       <Header handlePageChange={handlePageChange} />
       <Content currentPage={currentPage} />
       <Footer />

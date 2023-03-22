@@ -21,8 +21,11 @@ function Content(props) {
     }
 
     return (
-        <div>
-            {content()}
+        <div className='w-full h-screen text-white'>
+            <div className='px-8 mt-6 flex flex-col justify-start items-center h-full'>
+                {content()}    
+            </div>
+            
         </div>
     )
 }
