@@ -1,23 +1,40 @@
 import React, { useState } from 'react';
 import Project from './Project';
 
-
 function Portfolio() {
     const [projects, setProjects] = useState([
         {
-            name: 'Pantry Pal',
+            name: 'pantry-pal',
             description: 'MVC Full Stack',
             link: 'https://the-pantry-pal.herokuapp.com/landing',
             gitHub: 'https://github.com/sieraford/pantry-pal'
         },
         {
-            name: 'Weather App',
+            name: 'weather-app',
             description: 'Server API App',
             link: 'https://tobin-matt.github.io/weather-forecast-dashboard/',
             gitHub: 'https://github.com/Tobin-Matt/weather-forecast-dashboard'
         },
         {
-            name: 'Note Taker',
+            name: 'note-taker',
+            description: 'Express.js App',
+            link: 'https://sleepy-savannah-64922.herokuapp.com/',
+            gitHub: 'https://github.com/Tobin-Matt/express.js-note-taker'
+        },
+        {
+            name: 'weather-app',
+            description: 'Server API App',
+            link: 'https://tobin-matt.github.io/weather-forecast-dashboard/',
+            gitHub: 'https://github.com/Tobin-Matt/weather-forecast-dashboard'
+        },
+        {
+            name: 'pantry-pal',
+            description: 'MVC Full Stack',
+            link: 'https://the-pantry-pal.herokuapp.com/landing',
+            gitHub: 'https://github.com/sieraford/pantry-pal'
+        },
+        {
+            name: 'note-taker',
             description: 'Express.js App',
             link: 'https://sleepy-savannah-64922.herokuapp.com/',
             gitHub: 'https://github.com/Tobin-Matt/express.js-note-taker'
@@ -25,12 +42,12 @@ function Portfolio() {
     ]) 
 
     return (
-        <div>
+        <div className='grid gap-4 md:grid-cols-3 sm:grid-cols-1'>
             {projects.map((projects, index) => (
                 <Project 
                     key={index} 
                     name={projects.name} 
-                    descriptio={projects.description} 
+                    description={projects.description} 
                     link={projects.link}
                     gitHub={projects.gitHub}
                 />

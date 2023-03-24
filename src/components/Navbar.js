@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 function Navbar(props) {
+   console.log('navbar props');
+   console.log(props);
    const handleClick = (event, page) => {
         event.preventDefault();
         props.handlePageChange(page); 
@@ -66,7 +68,7 @@ function Navbar(props) {
                         <a 
                             href='about' 
                             onClick={(event) => handleClick(event, 'AboutMe')}
-                            className={props.currentPage === 'AboutMe'}
+                            className={props.currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
                         >
                             About Me
                         </a>
@@ -75,7 +77,7 @@ function Navbar(props) {
                         <a 
                             href='portfolio' 
                             onClick={(event) => handleClick(event, 'Portfolio')}
-                            className={props.currentPage === 'Portfolio'}
+                            className={props.currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
                         >
                             Portfolio
                         </a>
@@ -84,7 +86,7 @@ function Navbar(props) {
                         <a 
                             href='contact' 
                             onClick={(event) => handleClick(event, 'Contact')}
-                            className={props.currentPage === 'Contact'}
+                            className={props.currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
                         >
                             Contact
                         </a>
@@ -93,7 +95,7 @@ function Navbar(props) {
                         <a 
                             href='resume' 
                             onClick={(event) => handleClick(event, 'Resume')}
-                            className={props.currentPage === 'Resume'}
+                            className={props.currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
                         >
                             Resume
                         </a>
