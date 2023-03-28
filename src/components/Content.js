@@ -21,11 +21,17 @@ function Content(props) {
     }
 
     return (
-        <div className='w-full h-screen text-white'>
-            <div className='px-8 mt-6 flex justify-center items-start h-full'>
+        // <div className='w-full h-screen text-white'>
+        //     <div className='px-8 mt-6 flex justify-center items-start h-full'>
+        //         {content()}    
+        //     </div>
+            
+        // </div>
+        <div className='p-auto my-10 text-white'>
+            <div className='w-3/5 mx-auto'>
                 {content()}    
             </div>
-            
+        
         </div>
     )
 }

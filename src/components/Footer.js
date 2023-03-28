@@ -1,10 +1,23 @@
 import React from 'react';
+import { FaGithub, FaTwitter } from 'react-icons/fa';
 
 function Footer() {
     return (
-        <div>
-            <p>icons to be placed here</p>
+        <div className='mt-auto pb-6'>
+            <ul className='flex justify-center'>
+                <li className='p-0 mx-6 rounded-full text-center text-white hover:shadow-xl hover:shadow-[#1678FF]'>
+                    <a href='https://github.com/Tobin-Matt'>
+                    <FaGithub size={56}/> 
+                    </a>
+                </li>
+                <li className='p-0 mx-6 rounded-full text-center text-white hover:shadow-xl hover:shadow-[#1678FF]'>
+                    <a href='https://github.com/Tobin-Matt'>
+                    <FaTwitter size={56}/> 
+                    </a>
+                </li>
+            </ul>
         </div>
+        
         
     )
 }

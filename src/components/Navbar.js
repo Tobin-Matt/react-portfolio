@@ -16,8 +16,8 @@ function Navbar(props) {
         <div>
             {/* Web menu */}
             <nav>
-                <ul className='hidden md:flex'>
-                    <li className='active:text-gray-600'>
+                <ul className='hidden md:flex text-3xl'>
+                    <li className='active:text-gray-600 px-4'>
                         <a 
                             href='about' 
                             onClick={(event) => handleClick(event, 'AboutMe')}
@@ -26,7 +26,7 @@ function Navbar(props) {
                             About Me
                         </a>
                     </li>
-                    <li className='active:text-gray-600'>
+                    <li className='active:text-gray-600 px-4'>
                         <a 
                             href='portfolio' 
                             onClick={(event) => handleClick(event, 'Portfolio')}
@@ -35,7 +35,7 @@ function Navbar(props) {
                             Portfolio
                         </a>
                     </li>
-                    <li className='active:text-gray-600'>
+                    <li className='active:text-gray-600 px-4'>
                         <a 
                             href='contact' 
                             onClick={(event) => handleClick(event, 'Contact')}
@@ -44,7 +44,7 @@ function Navbar(props) {
                             Contact
                         </a>
                     </li>
-                    <li className='active:text-gray-600'>
+                    <li className='active:text-gray-600 px-4'>
                         <a 
                             href='resume' 
                             onClick={(event) => handleClick(event, 'Resume')}

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Resume() {
     return (
-        <div>
+        <div className='flex flex-col items-center'>
             <h1>My Resume</h1>
             <h3>Front End</h3>
             <ul>

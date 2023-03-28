@@ -11,7 +11,7 @@ function App() {
   }
 
   return (
-    <div className='bg-[#2b2b2b] overflow-scroll'>
+    <div className='bg-[#2b2b2b] min-h-screen flex flex-col font-staatliches'>
       <Header handlePageChange={handlePageChange} />
       <Content currentPage={currentPage} />
       <Footer />
