@@ -3,8 +3,14 @@ import Navbar from './Navbar';
 
 function Header(props) {
     return (
-        <div  className="w-full h-[100px] flex justify-between items-center px-4 mb-10 bg-gradient-to-t from-[#1678FF] to-[#003C8F] text-white">
-            <h1 className='text-4xl'>Matthew Tobin</h1>
+        <div  className="w-full h-[100px] flex justify-between items-center px-4 mb-10 text-white">
+            <a
+                href='about'
+                onClick={() => props.handlePageChange('AboutMe')}
+            >
+                <h1 className='text-4xl'>Matthew Tobin</h1>
+            </a>
+            
             <Navbar handlePageChange={props.handlePageChange} />
         </div>
         
@@ -12,3 +18,5 @@ function Header(props) {
 }
 
 export default Header;
+
+// #ffd89b → #19547b

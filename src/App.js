@@ -11,7 +11,7 @@ function App() {
   }
 
   return (
-    <div className='bg-[#2b2b2b] min-h-screen flex flex-col font-staatliches'>
+    <div className='bg-gradient-to-bl from-[#bdc3c7] to-[#2c3e50] min-h-screen flex flex-col font-staatliches'>
       <Header handlePageChange={handlePageChange} />
       <Content currentPage={currentPage} />
       <Footer />
@@ -20,3 +20,6 @@ function App() {
 }
 
 export default App;
+
+
+// #bdc3c7 → #2c3e50

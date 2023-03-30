@@ -27,10 +27,11 @@ function Content(props) {
         //     </div>
             
         // </div>
-        <div className='p-auto my-10 text-white'>
-            <div className='w-3/5 mx-auto'>
+        <div className='w-3/5 mx-auto p-auto my-10 text-white'>
+            {content()}
+            {/* <div className='w-3/5 mx-auto'>
                 {content()}    
-            </div>
+            </div> */}
         
         </div>
     )

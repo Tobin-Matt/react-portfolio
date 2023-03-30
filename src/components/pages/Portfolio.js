@@ -42,7 +42,7 @@ function Portfolio() {
     ]) 
 
     return (
-        <div className='grid gap-8 md:grid-cols-2 sm:grid-cols-1'>
+        <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-8'>
             {projects.map((projects, index) => (
                 <Project 
                     key={index} 
