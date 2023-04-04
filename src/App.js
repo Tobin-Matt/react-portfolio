@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className='bg-gradient-to-bl from-[#bdc3c7] to-[#2c3e50] min-h-screen flex flex-col font-staatliches'>
-      <Header handlePageChange={handlePageChange} />
+      <Header handlePageChange={handlePageChange} currentPage={currentPage} />
       <Content currentPage={currentPage} />
       <Footer />
     </div>

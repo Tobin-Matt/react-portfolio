@@ -22,16 +22,16 @@ function Portfolio() {
             gitHub: 'https://github.com/Tobin-Matt/express.js-note-taker'
         },
         {
-            name: 'weather-app',
-            description: 'Server API App',
-            link: 'https://tobin-matt.github.io/weather-forecast-dashboard/',
-            gitHub: 'https://github.com/Tobin-Matt/weather-forecast-dashboard'
+            name: 'social-network-api',
+            description: 'Social Network API',
+            link: 'https://github.com/Tobin-Matt/social-network-api',
+            gitHub: 'https://github.com/Tobin-Matt/social-network-api'
         },
         {
-            name: 'pantry-pal',
-            description: 'MVC Full Stack',
-            link: 'https://the-pantry-pal.herokuapp.com/landing',
-            gitHub: 'https://github.com/sieraford/pantry-pal'
+            name: 'sql-employee-tracker',
+            description: 'SQL Employee Tracker',
+            link: 'https://github.com/Tobin-Matt/sql-employee-tracker',
+            gitHub: 'https://github.com/Tobin-Matt/sql-employee-tracker'
         },
         {
             name: 'note-taker',
