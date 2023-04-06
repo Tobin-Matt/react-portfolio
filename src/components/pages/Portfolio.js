@@ -34,10 +34,10 @@ function Portfolio() {
             gitHub: 'https://github.com/Tobin-Matt/sql-employee-tracker'
         },
         {
-            name: 'note-taker',
-            description: 'Express.js App',
-            link: 'https://sleepy-savannah-64922.herokuapp.com/',
-            gitHub: 'https://github.com/Tobin-Matt/express.js-note-taker'
+            name: 'java-junkies',
+            description: 'MERN App',
+            link: 'https://java-junkies-virtual-cafe.herokuapp.com/',
+            gitHub: 'https://github.com/Klgibsonjr/java-junkies-virtual-cafe'
         },
     ]) 
 

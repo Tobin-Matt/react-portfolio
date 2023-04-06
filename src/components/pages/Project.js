@@ -7,7 +7,7 @@ function Project(props) {
     console.log('project props');
     console.log(props);
     const projectName = props.name;
-    const imagePath = `/assets/${projectName}.png`
+    const imagePath = `${process.env.PUBLIC_URL}/assets/${projectName}.png`
 
     return (
         <div class="group relative block">

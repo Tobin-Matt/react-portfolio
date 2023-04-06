@@ -20,6 +20,3 @@ function App() {
 }
 
 export default App;
-
-
-// #bdc3c7 → #2c3e50
